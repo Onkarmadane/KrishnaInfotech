@@ -1,0 +1,459 @@
+/*Coding for Nav bar*/
+.hero{
+    margin: 0;
+    height: 100px;
+    width: 100%;
+     
+}
+nav{/*Coding for Nav bar*/
+   
+    border: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position:fixed; 
+    background-color: white; 
+    font-family: Limelight;
+    z-index: 9999;
+    
+}
+.logo{/*Coding for logo*/
+    color: #FF0000;
+    font-size: 40px;
+    padding-left: 30%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+   
+}
+span{/*Coding for Logo IT letters in black*/
+    color: black;
+    
+    
+}
+#KI{
+   padding-left: 10px;
+}
+
+
+nav ul li{/*Coding for Nav bar*/
+    list-style-type:none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{/*Coding for Nav bar*/
+    color:black
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+nav ul li a:hover{/*Coding for hover*/
+    color: greenyellow;
+    transition: .3s;
+}
+button{/*Coding for Nav bar buttons*/
+    border: 10px;
+    background:#FF0000;
+    padding: 12px 30px;
+    color:black;
+    font-weight: bold;
+    font-size: 13px;
+    transition: .4s;
+    border-radius: 10%;
+    
+}
+button:hover{/*Coding for button hover */
+    transform: scale(1.1);
+    cursor: pointer;
+    color: greenyellow;
+    
+
+}
+
+article{/*Coding for Coding for Company intro*/
+    margin-top: 50px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+#about{
+    padding: 10px;
+}
+ul{
+    padding-left: 0px;
+    font-size: large;
+}
+#our-goal{/* coding for our vision*/
+    padding: 10px;    
+}
+
+#founder{/* coding for founder font*/
+    text-align: right;
+    font-size: 25px;
+}
+
+#about{/* coding for founder section about size*/
+    font-size: large;
+}
+a:link{/* coding for link styling*/
+    color: black;
+    text-decoration: none;
+}
+a:visited{/* coding for link styling for visited link*/
+    color: black;
+    text-decoration: none;
+}
+a:hover{/* coding for link styling for hover*/
+    color: greenyellow;
+    text-decoration: solid;
+}
+a:active{/* coding for active link*/
+    color: black;
+    text-decoration: none;
+}
+
+#CCTV{/* coding for CCTV image height and width*/
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: wheat;
+    min-width: 120px;
+    box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1;
+color: black;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+/*grid CSS*/
+div.grid{
+    margin: 19px;
+    border: 1px solid black;
+    float: left;
+    width: 150px; 
+}
+div.grid:hover{
+    border: 1px solid black;
+}
+div.grid img{
+    width: 150px;
+    height: 150px;
+}
+div.desc{
+    padding:15px; 
+    text-align: center;
+    height: 57px;
+}
+div.grid{
+    background-color: black;
+    color: white;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-left: 330px;
+    padding: 0;
+    border-bottom: #FF0000 2px solid;
+    width: 50%;  
+}
+
+h2:hover{
+    border-bottom: black 2px solid;
+    background-color: #FF0000;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+
+p , article{
+    font-size: 20px;
+    text-align: justify;
+   
+}
+li{
+    font-size: 20px;
+   
+}
+p,li{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p{
+    padding: 5px;
+}
+/*whatsapp icon coding*/
+ #whatsapp .whatsapp{
+        position: fixed;
+        transform: all .5s ease;
+        background-color: #25d366;
+        display: block;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0,0,0,0,0.15);
+        border-radius: 50px;
+        border-right: none;
+        color: #fff;
+        font-weight: 700;
+        font-size: 37px;
+        bottom: 210px;
+        left: 20px;
+        border: 0;
+        z-index: 9999;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    #whatsapp .whatsapp::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    -webkit-animation:pulse-border 1500ms ease-out infinite;
+    animation:pulse-border 1500ms ease-out infinite;
+    }
+    #whatsapp .whatsapp:focus{
+        border: none;
+        outline: none;
+    }
+    @keyframes pulse-border  {
+        0%{transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);opacity: 1;}
+        100%{transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1).5;opacity: 0;}
+    }
+/*code for gmail*/
+    #gmail .gmail{
+        position: fixed;
+        transform: all .5s ease;
+        background-color:#B23121;
+        display: block;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0,0,0,0,0.15);
+        border-radius: 50px;
+        border-right: none;
+        color: white;
+        font-weight: 700;
+        font-size: 30px;
+        bottom: 280px;
+        left: 20px;
+        border: 0;
+        z-index: 9999;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    #gmail .gmail::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #B23121;
+    border-radius: 50%;
+    -webkit-animation:pulse-border 1500ms ease-out infinite;
+    animation:pulse-border 1500ms ease-out infinite;
+
+    }
+    #gmail .gmail:focus{
+        border: none;
+        outline: none;
+    }
+    @keyframes pulse-border  {
+        0%{transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);opacity: 1;}
+        100%{transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1).5;opacity: 0;}
+    }
+
+    /*code for phn*/
+    #phn .phn{
+        position: fixed;
+        transform: all .5s ease;
+        background-color:blue;
+        display: block;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0,0,0,0,0.15);
+        border-radius: 50px;
+        border-right: none;
+        color: white;
+        font-weight: 700;
+        font-size: 30px;
+        bottom: 350px;
+        left: 20px;
+        border: 0;
+        z-index: 9999;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+
+    }
+    #phn .phn::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 50%;
+    -webkit-animation:pulse-border 1500ms ease-out infinite;
+    animation:pulse-border 1500ms ease-out infinite;
+
+    }
+    #phn .phn:focus{
+        border: none;
+        outline: none;
+    }
+    @keyframes pulse-border  {
+        0%{transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);opacity: 1;}
+        100%{transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1).5;opacity: 0;}
+     
+    }
+    
+
+  .vik{
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    float: right;
+    padding-left: 20px;
+    
+  }
+  .vik img{
+    height: 450px;
+    width: 400px; 
+  }
+
+  .container{
+    padding-left:60px;
+    height: 500px;
+    width: 500px;
+    text-align: left;
+  }
+  .checkmark{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 650px;
+    justify-content: space-between;
+    padding-left:0px;  
+  }
+  .checkmark i{
+    color: #FF0000;
+  }
+  div.service{
+    margin: 25px;  
+    padding: 25px; 
+    float: left;
+    width:200px;
+    height: 200px; 
+    padding-bottom: 100px;
+}
+div.service:hover{
+   filter: brightness(120%);
+   filter: contrast(120%);
+   filter: drop-shadow(0px 0px 10px black);
+   transition: 0.5s;
+   transform: scale(1.05);
+}
+div.service img{
+    width: 200px;
+    height: 200px; 
+    border-radius: 10px;
+}
+div.description{
+    background-color: black;
+    color: white;
+    padding:15px; 
+    text-align: center;
+    height: 57px;
+    border-radius: 10px;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+ }
+
+/*
+
+ .carousel-fade .carousel-item {
+	opacity: 0;
+	transition-duration: .6s;
+	transition-property: opacity;
+    z-index: -1;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+	opacity: 1;
+   
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+	opacity: 0;
+    
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+	transform: translateX(0);
+	transform: translate3d(0, 0, 0);
+}
