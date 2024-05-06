@@ -1,0 +1,814 @@
+html {
+  scroll-behavior:smooth !important;
+}
+/* Styles for active elements */
+.nav-item .active {
+  font-weight: bold !important;
+  color: #FF5E25 !important;
+  
+}
+.nav-link{
+  color: black !important;
+  font: bold !important;
+}
+
+
+/* Styles for the navigation bar */
+h1.logo {
+  margin: auto !important;
+  
+}
+.desk-nav .navbar {
+  background-color: white !important;
+  /* Background color */
+  position: sticky !important;
+  /* Sticky positioning */
+  box-shadow: 5px 5px 15px 5px rgb(217, 216, 216);
+  /* Shadow effect */
+  margin-bottom: 10px;
+  /* Margin at the bottom */
+  justify-content: space-between !important;
+  /* Horizontal space between items */
+  align-items: center !important;
+  /* Vertical alignment */
+  text-align: center !important;
+  /* Text alignment */
+}
+
+/* mob nav */
+.mob-head {
+  display: none;
+}
+
+#mob-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 5px 5px 15px 5px rgb(217, 216, 216);
+}
+
+#mob-nav .navbar {
+  justify-content: center !important;
+  padding: 5px 0;
+}
+
+#mob-nav .navbar-nav {
+  list-style: none;
+  padding: 0;
+  display: block !important;
+}
+
+#mob-nav .nav-item {
+  margin: 0 10px;
+}
+
+#mob-nav .nav-link {
+  text-decoration: none;
+  color: #000;
+  padding: 15px 15px;
+}
+
+#mob-nav .nav-link.active {
+  color: #FF5E25;
+  font-weight: bold !important;
+}
+
+#mob-nav {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  footer{
+      margin-bottom: 12%;
+      }
+  .mob-head {
+      display: block;
+      background-color: white;
+      box-shadow: 5px 5px 15px 5px rgb(217, 216, 216);
+  }
+
+  .desk-nav {
+      display: none;
+  }
+
+  #mob-nav {
+      z-index: 9999;
+      display: block !important;
+      /* Display the navbar for mobile and tablet devices */
+      font-size: 15px;
+      text-align: center !important;
+      /* justify-content: space-; */
+
+  }
+
+  #mob-nav .navbar-nav {
+      /* display: inline-block !important; */
+      flex-wrap: wrap !important;
+      /* Wrap the nav items for small screens */
+      justify-content: space-evenly !important;
+
+  }
+
+  #mob-nav .nav-item {
+      margin: 2%;
+  }
+
+  #mob-nav i {
+      font-size: 25px;
+  }
+
+  #mob-nav p {
+      text-align: center !important;
+      margin: 7px 8px 0px 8px;
+      padding: 0;
+  }
+
+  #mob-nav .nav-link {
+      margin: 0;
+      padding: 0%;
+  }
+}
+
+/* styles for carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  outline: black;
+  background-color: #FF5E25;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+}
+
+.carousel-indicators li {
+ bottom: -20px;
+  margin-top: 100px !important;
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  margin: 5px;
+  text-indent: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  background-color: #FF5E25;
+  /* box-shadow:  1px 1px 1px 1px rgba(0,0,0,0.5);     */
+}
+
+.carousel-indicators .active {
+  
+  width: 10px;
+  height: 5px;
+  margin: 5px;
+  background-color: #00004D;
+}
+
+/* Styles for the logo */
+.logo {
+  /* Coding for logo */
+  color: #FF5E25;
+  /* Text color */
+  font-size: 200%;
+  /* Font size */
+  padding-left: 30%;
+  /* Left padding */
+  padding-right: 24%;
+  /* Right padding */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* Font family */
+  /* margin: auto !important; */
+  /* Margin */
+  /* justify-content: space-between !important; */
+  /* Horizontal space between items */
+}
+
+/* Styles for the span element */
+span {
+  /* Coding for Logo IT letters in black */
+  color: black;
+  /* Text color */
+}
+
+/* Body styles */
+body {
+  overflow-x: hidden;
+  /* Hide horizontal overflow */
+}
+
+/* Styles for various elements including article, list, etc. */
+article,
+#list,
+#our-goal,
+p {
+  /* Coding for Company intro */
+  margin-top: 0.1%;
+  /* Top margin */
+  padding: 3%;
+  /* Padding */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* Font family */
+  font-size: 20px;
+  /* Font size */
+  text-align: justify;
+  /* Text alignment */
+  margin: 12px;
+  /* Margin */
+}
+
+/* Styles for the about section */
+#about {
+  padding: 1%;
+  /* Padding */
+  font-size: 100%;
+  /* Font size */
+}
+
+/* Styles for unordered lists */
+ul {
+  font-size: 120%;
+  /* Font size */
+}
+
+/* Styles for card images */
+.card .card-img-top {
+  width: 200px;
+  /* Image width */
+  margin: auto;
+  /* Centering */
+  padding: 0px !important;
+  /* Padding */
+  /* object-fit: cover; */
+  
+}
+
+/* Styles for h1 */
+h1 {
+  text-align: center;
+  /* Text alignment */
+}
+
+/* Styles for h2 */
+h2 {
+  margin-top: 50px;
+  /* Top margin */
+  margin-bottom: 30px;
+  /* Bottom margin */
+  font-size: 30px;
+  /* Font size */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Font family */
+  text-align: center;
+  /* Text alignment */
+  margin-left: 25%;
+  /* Left margin */
+  padding: 0;
+  /* Padding */
+  border-bottom: #FF5E25 2px solid;
+  /* Border bottom */
+  width: 50%;
+  /* Width */
+  text-transform: uppercase;
+  /* Text transform */
+  font-weight: 900;
+  /* Font weight */
+}
+
+/* Hover styles for h2 */
+h2:hover {
+  border-bottom: black 2px solid;
+  /* Border color */
+  background-color: #FF5E25;
+  /* Background color */
+  transition: 0.8s;
+  /* Transition effect */
+  border-radius: 10px;
+  /* Border radius */
+}
+
+/* Styles for WhatsApp icon */
+#whatsapp .whatsapp {
+  position: fixed;
+  /* Fixed positioning */
+  transform: all .5s ease;
+  /* Transformation */
+  background-color: #25d366;
+  /* Background color */
+  display: block;
+  /* Display type */
+  text-align: center;
+  /* Text alignment */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0, 0.15);
+  /* Box shadow */
+  border-radius: 50px;
+  /* Border radius */
+  border-right: none;
+  /* Right border */
+  color: #fff;
+  /* Text color */
+  font-weight: 700;
+  /* Font weight */
+  font-size: 37px;
+  /* Font size */
+  bottom: 10%;
+  /* Bottom position */
+  left: 1.5%;
+  /* Left position */
+  border: 0;
+  /* Border */
+  z-index: 9999;
+  /* Z-index */
+  width: 50px;
+  /* Width */
+  height: 50px;
+  /* Height */
+  line-height: 50px;
+  /* Line height */
+  /* justify-content: center !important; */
+}
+
+
+/* Styles for WhatsApp icon's pseudo-element */
+#whatsapp .whatsapp::before {
+  content: "";
+  /* Empty content */
+  position: absolute;
+  /* Absolute positioning */
+  z-index: -1;
+  /* Z-index */
+  left: 50%;
+  /* Left position */
+  top: 50%;
+  /* Top position */
+  transform: translateX(-50%) translateY(-50%);
+  /* Transformation */
+  display: block;
+  /* Display type */
+  width: 60px;
+  /* Width */
+  height: 60px;
+  /* Height */
+  background-color: #25d366;
+  /* Background color */
+  border-radius: 50%;
+  /* Border radius */
+  -webkit-animation: pulse-border 1500ms ease-out infinite;
+  /* Animation */
+  animation: pulse-border 1500ms ease-out infinite;
+  /* Animation */
+}
+
+/* Focus styles for WhatsApp icon */
+#whatsapp .whatsapp:focus {
+  border: none;
+  /* No border */
+  outline: none;
+  /* No outline */
+}
+
+/* Keyframe animation for pulse-border */
+@keyframes pulse-border {
+  0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      /* Transformation */
+      opacity: 1;
+      /* Opacity */
+  }
+
+  100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1).5;
+      /* Transformation */
+      opacity: 0;
+      /* Opacity */
+  }
+}
+
+/* Styles for Gmail icon */
+#gmail .gmail {
+  position: fixed;
+  /* Fixed positioning */
+  transform: all .5s ease;
+  /* Transformation */
+  background-color: #B23121;
+  /* Background color */
+  display: block;
+  /* Display type */
+  text-align: center;
+  /* Text alignment */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0, 0.15);
+  /* Box shadow */
+  border-radius: 50px;
+  /* Border radius */
+  border-right: none;
+  /* Right border */
+  color: white;
+  /* Text color */
+  font-weight: 700;
+  /* Font weight */
+  font-size: 30px;
+  /* Font size */
+  bottom: 20%;
+  /* Bottom position */
+  left: 1.5%;
+  /* Left position */
+  border: 0;
+  /* Border */
+  z-index: 9999;
+  /* Z-index */
+  width: 50px;
+  /* Width */
+  height: 50px;
+  /* Height */
+  line-height: 50px;
+  /* Line height */
+}
+
+/* Styles for Gmail icon's pseudo-element */
+#gmail .gmail::before {
+  content: "";
+  /* Empty content */
+  position: absolute;
+  /* Absolute positioning */
+  z-index: -1;
+  /* Z-index */
+  left: 50%;
+  /* Left position */
+  top: 50%;
+  /* Top position */
+  transform: translateX(-50%) translateY(-50%);
+  /* Transformation */
+  display: block;
+  /* Display type */
+  width: 60px;
+  /* Width */
+  height: 60px;
+  /* Height */
+  background-color: #B23121;
+  /* Background color */
+  border-radius: 50%;
+  /* Border radius */
+  -webkit-animation: pulse-border 1500ms ease-out infinite;
+  /* Animation */
+  animation: pulse-border 1500ms ease-out infinite;
+  /* Animation */
+}
+
+/* Focus styles for Gmail icon */
+#gmail .gmail:focus {
+  border: none;
+  /* No border */
+  outline: none;
+  /* No outline */
+}
+
+/* Styles for Phone icon */
+#phn .phn {
+  position: fixed;
+  /* Fixed positioning */
+  transform: all .5s ease;
+  /* Transformation */
+  background-color: blue;
+  /* Background color */
+  display: block;
+  /* Display type */
+  text-align: center;
+  /* Text alignment */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0, 0.15);
+  /* Box shadow */
+  border-radius: 50px;
+  /* Border radius */
+  border-right: none;
+  /* Right border */
+  color: white;
+  /* Text color */
+  font-weight: 700;
+  /* Font weight */
+  font-size: 30px;
+  /* Font size */
+  bottom: 30%;
+  /* Bottom position */
+  left: 1.5%;
+  /* Left position */
+  border: 0;
+  /* Border */
+  z-index: 9999;
+  /* Z-index */
+  width: 50px;
+  /* Width */
+  height: 50px;
+  /* Height */
+  line-height: 50px;
+  /* Line height */
+}
+
+/* Styles for Phone icon's pseudo-element */
+#phn .phn::before {
+  content: "";
+  /* Empty content */
+  position: absolute;
+  /* Absolute positioning */
+  z-index: -1;
+  /* Z-index */
+  left: 50%;
+  /* Left position */
+  top: 50%;
+  /* Top position */
+  transform: translateX(-50%) translateY(-50%);
+  /* Transformation */
+  display: block;
+  /* Display type */
+  width: 60px;
+  /* Width */
+  height: 60px;
+  /* Height */
+  background-color: blue;
+  /* Background color */
+  border-radius: 50%;
+  /* Border radius */
+  -webkit-animation: pulse-border 1500ms ease-out infinite;
+  /* Animation */
+  animation: pulse-border 1500ms ease-out infinite;
+  /* Animation */
+}
+
+/* Focus styles for Phone icon */
+#phn .phn:focus {
+  border: none;
+  /* No border */
+  outline: none;
+  /* No outline */
+}
+
+/* Keyframe animation for pulse-border */
+@keyframes pulse-border {
+  0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      /* Transformation */
+      opacity: 1;
+      /* Opacity */
+  }
+
+  100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1).5;
+      /* Transformation */
+      opacity: 0;
+      /* Opacity */
+  }
+}
+
+/* Styles for vik class */
+.vik {
+  height: 600px;
+  /* Height */
+  width: 750px;
+  /* Width */
+  text-align: center;
+  /* Text alignment */
+  float: right;
+  /* Float right */
+}
+
+/* Styles for images inside vik class */
+.vik img {
+  height: 100%;
+  /* Height */
+  width: 100%;
+  /* Width */
+  padding-left: 15%;
+  /* Left padding */
+}
+
+/* Styles for container class */
+.container {
+  font-size: x-large;
+  /* Font size */
+  text-align: left;
+  /* Text alignment */
+}
+
+/* Styles for checkmark class */
+.checkmark {
+  list-style: none;
+  /* No list style */
+  display: flex;
+  /* Flex display */
+  width: 65%;
+  /* Width */
+  justify-content: space-between;
+  /* Horizontal space between items */
+  padding-top: 0%;
+  /* Top padding */
+  padding-bottom: 10%;
+  /* Bottom padding */
+  font-size: 20px;
+  /* Font size */
+  margin: 0%;
+  /* Margin */
+}
+
+/* Styles for checkmark elements */
+.checkmark i,
+.fa-check-circle {
+  color: #FF5E25 !important;
+  /* Text color */
+}
+
+/* Styles for carousel-fade class */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  /* Opacity */
+  transition-duration: .6s;
+  /* Transition duration */
+  transition-property: opacity;
+  /* Transition property */
+}
+
+/* Styles for active carousel items in carousel-fade */
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+  /* Opacity */
+}
+
+/* Styles for active carousel items when sliding */
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0;
+  /* Opacity */
+}
+
+/* Styles for next and previous carousel items */
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  transform: translateX(0);
+  /* Transformation */
+  transform: translate3d(0, 0, 0);
+  /* Transformation */
+}
+
+/* Styles for checkmark1 element */
+/* marquee{
+  width: 75%;
+  margin: auto !important;
+} */
+.checkmark1 {
+  max-width: 75%;
+  font-weight: bold !important;
+  margin: auto !important;
+  /* Margin */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* Font family */
+  font-size: 50px;
+  /* Font size */
+  text-align: justify;
+  /* Text alignment */
+}
+
+/* Styles for KI element */
+#KI {
+  padding-left: 1%;
+  /* Left padding */
+  width: 50px;
+  /* Width */
+}
+
+/* Hover styles for cards */
+.card:hover {
+  filter: brightness(120%);
+  /* Brightness filter */
+  filter: contrast(120%);
+  /* Contrast filter */
+  filter: drop-shadow(0px 0px 10px black);
+  /* Drop shadow */
+  transition: 0.5s;
+  /* Transition */
+  transform: scale(1.02);
+  /* Scale transformation */
+}
+
+/* Styles for cards */
+.card {
+  margin: auto !important;
+  /* Margin */
+  margin: 2% !important;
+  /* Margin */
+  border-radius: 20px !important;
+  /* Border radius */
+  outline: 1px solid slategray;
+}
+
+/* Media query for screen width up to 700px */
+@media screen and (max-width:700px) {
+  .mob-head{
+      background-color: white;
+      box-shadow: 5px 5px 15px 5px rgb(217, 216, 216);
+  }
+  footer{
+  margin-bottom: 17%;
+  }
+  /* Styles for cards */
+  .card {
+      height: 20%;
+      /* Height */
+      width: 90%;
+      /* Width */
+      margin: auto !important;
+      /* Margin */
+      margin-bottom: 20px !important;
+      /* Bottom margin */
+  }
+
+  /* Styles for logo */
+  .logo {
+      /* Coding for logo */
+      color: #FF5E25;
+      /* Text color */
+      font-size: 100%;
+      /* Font size */
+      padding-left: 10%;
+      /* Left padding */
+      padding-right: 10%;
+      /* Right padding */
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      /* Font family */
+      margin: 0;
+      /* Margin */
+  }
+
+  /* Styles for KI element */
+  #KI {
+      padding-left: 1%;
+      /* Left padding */
+      width: 50px;
+      /* Width */
+      /* height: 30px; */
+      /* Height */
+  }
+
+  /* Styles for h2 */
+  h2 {
+      font-size: 20px;
+      /* Font size */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* Font family */
+      text-align: center;
+      /* Text alignment */
+      margin-left: 25%;
+      /* Left margin */
+      padding: 0;
+      /* Padding */
+      border-bottom: #FF5E25 2px solid;
+      /* Border bottom */
+      width: 50%;
+      /* Width */
+      text-transform: uppercase;
+      /* Text transform */
+  }
+
+  /* Styles for vik class */
+  .vik {
+      height: 100%;
+      /* Height */
+      width: 100%;
+      /* Width */
+      float: right;
+      /* Float right */
+      margin-left: 20%;
+      /* Left margin */
+  }
+  .mob-head {
+      
+      margin-bottom: 2%;
+      box-shadow: 5px 5px 15px 5px rgb(217, 216, 216);
+      font-size: 5px !important;
+  }
+.logo{
+  font-size: 20px;
+}
+#mob-nav .nav-link p,i {
+  font-size: 20px !important;
+}
+.checkmark , .checkmark i{
+  font-size: 17px;
+  width: 100%;
+  text-align: center;
+}
+}
+
+/* Styles for footer */
+footer {
+  background-color: #FF5E25;
+  /* Background color */
+  color: white;
+  /* Text color */
+}
+@media screen and(max-width: 912px){
+  .mob-head {
+      margin-bottom: 2%;
+      box-shadow: 5px 5px 15px 5px rgb(217, 216, 216) !important;
+      font-size: 5px !important;
+  }
+}
