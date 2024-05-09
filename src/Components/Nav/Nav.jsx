@@ -1,72 +1,88 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import '../../../src/index.css';
-import styles from './Nav.module.css';
+// import styles from './Nav.module.css';
 import logoImg from '../../../public/imgs/logo.webp'
 const Navbar = () => {
   return (
+    <>
     <div className="desk-nav">
-      <nav className='navbar sticky-top navbar-expand-lg navbar-light bg-light'>
-        <a className="navbar-brand mx-2" to="index.html">
-          <img src={logoImg} id="KI" alt="logo" />
-        </a>
-        {/* <h1 className="logo"><b>Krishna <span>Infotech</span></b></h1> */}
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        {/* Navigation links */}
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav text-end">
+      <nav className="navbar navbar-expand-lg navbar-dark m-0">
+        <div className="container">
+
+          <ul className="navbar-nav mr-auto ">
             <li className="nav-item">
-              <a className='nav-link active' to="index.html">Home</a>
+              <NavLink className="nav-link " to="/">Home</NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" to="services.html">Our Services</a>
+              <NavLink className="nav-link" to="/servicespage">Services</NavLink>
             </li>
-            <li className="nav-item ">
-              <a className="nav-link" to="about.html">About Us</a>
+          </ul>
+          <NavLink className="navbar-brand logo_area" to="/">
+            <img src={logoImg} id="KI" alt="logo" />
+          </NavLink>
+         <ul className="navbar-nav ml-auto">
+            {/* <li className="nav-item">
+              <NavLink className="nav-link" to="/products">Products</NavLink>
+            </li> */}
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/aboutpage">About Us</NavLink>
             </li>
           </ul>
         </div>
       </nav>
+      
     </div>
+<Outlet/>
+</>
   );
 };
 
 const MobileNavbar = () => {
+  
   return (
+    <>
     <div>
       <div className="mob-head">
         <h1 className="logo">
-          <a className="navbar-brand" to="index.html">
-            <img src="./assets/imgs/logo.webp" id="KI" alt="logo" />
-          </a>
-          <b>Krishna <span>Infotech</span></b>
+          <NavLink className="navbar-brand" to="/">
+            <img src={logoImg} id="KI" className=' p-2 mx-auto' alt="logo" />
+          </NavLink>
+          {/* <b>Krishna <span>Infotech</span></b> */}
         </h1>
       </div>
       <div id="mob-nav">
         <ul className="nav justify-content-center">
           <li className="nav-item">
-            <a className="nav-link active" to="./index.html">
-              <i className="fas fa-home fa-fade" style={{ '--fa-animation-duration': '2s', '--fa-fade-opacity': 0.6 }}></i>
+            <NavLink className="nav-link" to="/">
+              <i className="fas fa-home " style={{ '--fa-animation-duration': '2s', '--fa-fade-opacity': 0.6 }}></i>
               <p>Home</p>
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" to="./services.html">
+            <NavLink className="nav-link" to="/servicespage">
               <i className="fa-solid fa-cogs fa-duotone"></i>
               <p>Our Services</p>
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" to="./about.html">
+            <NavLink className="nav-link" to="/aboutpage">
               <i className="fa-solid fa-circle-info"></i>
               <p>About Us</p>
-            </a>
+            </NavLink>
           </li>
+          {/* <li className="nav-item">
+            <NavLink className="nav-link" to="/productpage">
+            <i className="fas fa-box-open animated-icon"></i>
+              <p>Products</p>
+            </NavLink>
+          </li> */}
         </ul>
       </div>
     </div>
+    <Outlet/>
+    </>
   );
 };
 

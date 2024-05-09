@@ -20,8 +20,8 @@ function Card({ imageSrc, title, text }) {
 function CardGroup() {
   return (
     <>
-    <h1 className='bolder mt-4'><b>We Can Provide</b></h1>
-    <div className="line"></div>
+    <h1 className='bolder mt-4'  data-aos="fade-up"><b>We Can Provide</b></h1>
+    <div className="line"  data-aos="fade-up"></div>
     <div className="card-group w-75 mx-auto" data-aos="zoom-in">
       <Card
         imageSrc={hackImg}

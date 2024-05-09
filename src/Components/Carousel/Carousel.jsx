@@ -10,7 +10,7 @@ import './Carousel.css';
 function Carousel() { // Rename your local component
   return (
     <>
-<div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleIndicators" className="carousel slide " data-bs-ride="carousel">
       <div className="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -44,4 +44,4 @@ function Carousel() { // Rename your local component
   );
 }
 
-export default Carousel; // Export your local component with the new name
+export default Carousel;

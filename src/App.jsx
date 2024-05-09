@@ -1,22 +1,19 @@
 import React from 'react'
-import { Navbar } from './Components/Nav/Nav';
-import Footer from './Components/Footer/Footer';
-import './index.css';
-import Carousel from './Components/Carousel/Carousel'
-import Intro from './Components/Intro/Intro';
-import WeProvide from './Components/WeProvide/WeProvide'
-import Vision from './Components/Vision/Vision'
-import Services from './Components/Services/Services';
+import { BrowserRouter, Route,Routes } from 'react-router-dom';
+import Home from './Pages/home';
+import ServicesPage from './Pages/servicespage';
+import AboutPage from './Pages/aboutpage';
+
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Carousel />
-      <Intro />
-      <WeProvide />
-      <Vision />
-      <Services />
-      <Footer />
+      <BrowserRouter>
+      <Routes>
+        <Route index path='/' element={<Home/>}/>
+        <Route path='/servicespage' element={<ServicesPage/>}/>
+        <Route path='/AboutPage' element={<AboutPage/>} />
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }

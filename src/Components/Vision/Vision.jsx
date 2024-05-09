@@ -9,7 +9,7 @@ const Vision = () => {
   }
   return (
 
-    <div>
+    <div data-aos="fade-up">
       <h1 className='bolder mt-4'><b>Our Vision</b></h1>
     <div className="line"></div>
       <div className={`${styles.card} card mt-5 w-75 mx-auto`}>
