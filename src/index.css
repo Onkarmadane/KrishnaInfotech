@@ -8,35 +8,20 @@ html {
     max-width: 24%;
     margin: auto;
 }
+
   /* navbar */
   /* Styles for KI element */
   .desk-nav .navbar {
     background-color: white !important;
     box-shadow: 5px 5px 15px 5px rgb(217, 216, 216);
     z-index: 1;
-    position: fixed !important;
-    top: 0 !important;
-    /* border-radius: 50px;
-   
-    padding: 5px;
-    margin: 5px; */
   }
   
 .desk-nav .nav-link:hover{
   color: #FF5E25 !important;
   animation-duration: 0.15s !important;
 }
-  /* .logo_area {
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    content: "";
-    margin-left: -150px;
-    text-align: center;
-    z-index:1 !important;
-} */
+
   #KI {
     margin-left: 20px !important;
     width: 90px;
@@ -86,8 +71,16 @@ html {
     left: 0;
     right: 0;
     background-color: white;
-    box-shadow: 5px 5px 15px 5px rgb(217, 216, 216);
+    box-shadow: 5px 5px 15px 5px rgb(138, 137, 137);
+    transition: transform 0.30s ease, opacity 0.30s ease; /* Added opacity transition */
+    opacity: 1;
   }
+  
+  .hide-navbar {
+    transform: translateY(100%);
+    opacity: 0; /* Hide the navbar with opacity */
+  }
+  
   
   #mob-nav .navbar {
     justify-content: center !important;
@@ -189,11 +182,7 @@ html {
     padding-right: 24%;
     /* Right padding */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* Font family */
-    /* margin: auto !important; */
-    /* Margin */
-    /* justify-content: space-between !important; */
-    /* Horizontal space between items */
+   
   }
   
   /* Styles for the span element */
@@ -299,277 +288,7 @@ html {
     /* Border radius */
   }
   
-  /* Styles for WhatsApp icon */
-  #whatsapp .whatsapp {
-    position: fixed;
-    /* Fixed positioning */
-    transform: all .5s ease;
-    /* Transformation */
-    background-color: #25d366;
-    /* Background color */
-    display: block;
-    /* Display type */
-    text-align: center;
-    /* Text alignment */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0, 0.15);
-    /* Box shadow */
-    border-radius: 50px;
-    /* Border radius */
-    border-right: none;
-    /* Right border */
-    color: #fff;
-    /* Text color */
-    font-weight: 700;
-    /* Font weight */
-    font-size: 9px !important;
-    /* Font size */
-    bottom: 10%;
-    /* Bottom position */
-    left: 1.5%;
-    /* Left position */
-    border: 0;
-    /* Border */
-    z-index: 9999;
-    /* Z-index */
-    width: 50px;
-    /* Width */
-    height: 50px;
-    /* Height */
-    line-height: 50px;
-    /* Line height */
-    /* justify-content: center !important; */
-  }
-  
-  
-  /* Styles for WhatsApp icon's pseudo-element */
-  #whatsapp .whatsapp::before {
-    content: "";
-    /* Empty content */
-    position: absolute;
-    /* Absolute positioning */
-    z-index: -1;
-    /* Z-index */
-    left: 50%;
-    /* Left position */
-    top: 50%;
-    /* Top position */
-    transform: translateX(-50%) translateY(-50%);
-    /* Transformation */
-    display: block;
-    /* Display type */
-    width: 60px;
-    /* Width */
-    height: 60px;
-    /* Height */
-    background-color: #25d366;
-    /* Background color */
-    border-radius: 50%;
-    /* Border radius */
-    -webkit-animation: pulse-border 1500ms ease-out infinite;
-    /* Animation */
-    animation: pulse-border 1500ms ease-out infinite;
-    /* Animation */
-  }
-  
-  /* Focus styles for WhatsApp icon */
-  
-  #whatsapp .whatsapp:focus {
-    border: none;
-    /* No border */
-    outline: none;
-    /* No outline */
-  }
-  
-  /* Keyframe animation for pulse-border */
-  @keyframes pulse-border {
-    0% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        /* Transformation */
-        opacity: 1;
-        /* Opacity */
-    }
-  
-    100% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1).5;
-        /* Transformation */
-        opacity: 0;
-        /* Opacity */
-    }
-  }
-  
-  /* Styles for Gmail icon */
-  #gmail .gmail {
-    position: fixed;
-    /* Fixed positioning */
-    transform: all .5s ease;
-    /* Transformation */
-    background-color: #B23121;
-    /* Background color */
-    display: block;
-    /* Display type */
-    text-align: center;
-    /* Text alignment */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0, 0.15);
-    /* Box shadow */
-    border-radius: 50px;
-    /* Border radius */
-    border-right: none;
-    /* Right border */
-    color: white;
-    /* Text color */
-    font-weight: 700;
-    /* Font weight */
-    font-size: 30px;
-    /* Font size */
-    bottom: 20%;
-    /* Bottom position */
-    left: 1.5%;
-    /* Left position */
-    border: 0;
-    /* Border */
-    z-index: 9999;
-    /* Z-index */
-    width: 50px;
-    /* Width */
-    height: 50px;
-    /* Height */
-    /* line-height: 50px; */
-    /* Line height */
-  }
-  
-  /* Styles for Gmail icon's pseudo-element */
-  #gmail .gmail::before {
-    content: "";
-    /* Empty content */
-    position: absolute;
-    /* Absolute positioning */
-    z-index: -1;
-    /* Z-index */
-    left: 50%;
-    /* Left position */
-    top: 50%;
-    /* Top position */
-    transform: translateX(-50%) translateY(-50%);
-    /* Transformation */
-    display: block;
-    /* Display type */
-    width: 60px;
-    /* Width */
-    height: 60px;
-    /* Height */
-    background-color: #B23121;
-    /* Background color */
-    border-radius: 50%;
-    /* Border radius */
-    -webkit-animation: pulse-border 1500ms ease-out infinite;
-    /* Animation */
-    animation: pulse-border 1500ms ease-out infinite;
-    /* Animation */
-  }
-  
-  /* Focus styles for Gmail icon */
-  #gmail .gmail:focus {
-    border: none;
-    /* No border */
-    outline: none;
-    /* No outline */
-  }
-  
-  /* Styles for Phone icon */
-  #phn .phn {
-    position: fixed;
-    /* Fixed positioning */
-    transform: all .5s ease;
-    /* Transformation */
-    background-color: blue;
-    /* Background color */
-    display: block;
-    /* Display type */
-    text-align: center;
-    /* Text alignment */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0, 0.15);
-    /* Box shadow */
-    border-radius: 50px;
-    /* Border radius */
-    border-right: none;
-    /* Right border */
-    color: white;
-    /* Text color */
-    font-weight: 700;
-    /* Font weight */
-    font-size: 30px;
-    /* Font size */
-    bottom: 30%;
-    /* Bottom position */
-    left: 1.5%;
-    /* Left position */
-    border: 0;
-    /* Border */
-    z-index: 9999;
-    /* Z-index */
-    width: 50px;
-    /* Width */
-    height: 50px;
-    /* Height */
-    /* line-height: 50px; */
-    /* Line height */
-  }
-  
-  /* Styles for Phone icon's pseudo-element */
-  #phn .phn::before {
-    content: "";
-    /* Empty content */
-    position: absolute;
-    /* Absolute positioning */
-    z-index: -1;
-    /* Z-index */
-    left: 50%;
-    /* Left position */
-    top: 50%;
-    /* Top position */
-    transform: translateX(-50%) translateY(-50%);
-    /* Transformation */
-    display: block;
-    /* Display type */
-    width: 60px;
-    /* Width */
-    height: 60px;
-    /* Height */
-    background-color: blue;
-    /* Background color */
-    border-radius: 50%;
-    /* Border radius */
-    -webkit-animation: pulse-border 1500ms ease-out infinite;
-    /* Animation */
-    animation: pulse-border 1500ms ease-out infinite;
-    /* Animation */
-  }
-  
-  /* Focus styles for Phone icon */
-  #phn .phn:focus {
-    border: none;
-    /* No border */
-    outline: none;
-    /* No outline */
-  }
-  
-  /* Keyframe animation for pulse-border */
-  @keyframes pulse-border {
-    0% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        /* Transformation */
-        opacity: 1;
-        /* Opacity */
-    }
-  
-    100% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1).5;
-        /* Transformation */
-        opacity: 0;
-        /* Opacity */
-    }
-  }
-  
+ 
   /* Styles for vik class */
   .vik {
     height: 600px;
@@ -627,10 +346,7 @@ html {
     /* Text color */
   }
   /* Styles for checkmark1 element */
-  /* marquee{
-    width: 75%;
-    margin: auto !important;
-  } */
+ 
   .checkmark1 {
     max-width: 75%;
     font-weight: bold !important;

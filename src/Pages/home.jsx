@@ -6,6 +6,8 @@ import WeProvide from '../Components/WeProvide/WeProvide';
 import Vision from '../Components/Vision/Vision';
 import ContactOverlay from '../Components/ContactOverlay/ContactOverlay';
 import Footer from '../Components/Footer/Footer';
+import Marquee from '../Components/Marquee/Marquee'
+import BackToTopButton from '../Components/BackToTop/BackToTop';
 const Home = () => {
 useEffect(()=>{
     document.title ='Krishna Infotech | Home'
@@ -18,8 +20,10 @@ useEffect(()=>{
             <Intro />
             <WeProvide />
             <Vision />
-            <ContactOverlay />
+            <Marquee />
             <Footer />
+            <BackToTopButton/>
+            <ContactOverlay />
 
         </>
     )

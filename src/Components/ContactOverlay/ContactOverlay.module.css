@@ -1,1 +1,272 @@
 
+ .whatsapp {
+    position: fixed;
+    /* Fixed positioning */
+    transform: all .5s ease;
+    /* Transformation */
+    background-color: #25d366;
+    /* Background color */
+    display: block;
+    /* Display type */
+    text-align: center;
+    /* Text alignment */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0, 0.15);
+    /* Box shadow */
+    border-radius: 50px;
+    /* Border radius */
+    border-right: none;
+    /* Right border */
+    color: #fff;
+    /* Text color */
+    font-weight: 700;
+    /* Font weight */
+    font-size: 9px !important;
+    /* Font size */
+    bottom: 10%;
+    /* Bottom position */
+    left: 1.5%;
+    /* Left position */
+    border: 0;
+    /* Border */
+    z-index: 9999;
+    /* Z-index */
+    width: 50px;
+    /* Width */
+    height: 50px;
+    /* Height */
+    line-height: 50px;
+    /* Line height */
+    /* justify-content: center !important; */
+  }
+  
+  
+  /* Styles for WhatsApp icon's pseudo-element */
+   .whatsapp::before {
+    content: "";
+    /* Empty content */
+    position: absolute;
+    /* Absolute positioning */
+    z-index: -1;
+    /* Z-index */
+    left: 50%;
+    /* Left position */
+    top: 50%;
+    /* Top position */
+    transform: translateX(-50%) translateY(-50%);
+    /* Transformation */
+    display: block;
+    /* Display type */
+    width: 60px;
+    /* Width */
+    height: 60px;
+    /* Height */
+    background-color: #25d366;
+    /* Background color */
+    border-radius: 50%;
+    /* Border radius */
+    -webkit-animation: pulse-border 1500ms ease-out infinite;
+    /* Animation */
+    animation: pulse-border 1500ms ease-out infinite;
+    /* Animation */
+  }
+  
+  /* Focus styles for WhatsApp icon */
+  
+   .whatsapp:focus {
+    border: none;
+    /* No border */
+    outline: none;
+    /* No outline */
+  }
+  
+  /* Keyframe animation for pulse-border */
+  @keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        /* Transformation */
+        opacity: 1;
+        /* Opacity */
+    }
+  
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1).5;
+        /* Transformation */
+        opacity: 0;
+        /* Opacity */
+    }
+  }
+  
+  /* Styles for Gmail icon */
+   .gmail {
+    position: fixed;
+    /* Fixed positioning */
+    transform: all .5s ease;
+    /* Transformation */
+    background-color: #B23121;
+    /* Background color */
+    display: block;
+    /* Display type */
+    text-align: center;
+    /* Text alignment */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0, 0.15);
+    /* Box shadow */
+    border-radius: 50px;
+    /* Border radius */
+    border-right: none;
+    /* Right border */
+    color: white;
+    /* Text color */
+    font-weight: 700;
+    /* Font weight */
+    font-size: 30px;
+    /* Font size */
+    bottom: 20%;
+    /* Bottom position */
+    left: 1.5%;
+    /* Left position */
+    border: 0;
+    /* Border */
+    z-index: 9999;
+    /* Z-index */
+    width: 50px;
+    /* Width */
+    height: 50px;
+    /* Height */
+    /* line-height: 50px; */
+    /* Line height */
+  }
+  
+  /* Styles for Gmail icon's pseudo-element */
+  .gmail::before {
+    content: "";
+    /* Empty content */
+    position: absolute;
+    /* Absolute positioning */
+    z-index: -1;
+    /* Z-index */
+    left: 50%;
+    /* Left position */
+    top: 50%;
+    /* Top position */
+    transform: translateX(-50%) translateY(-50%);
+    /* Transformation */
+    display: block;
+    /* Display type */
+    width: 60px;
+    /* Width */
+    height: 60px;
+    /* Height */
+    background-color: #B23121;
+    /* Background color */
+    border-radius: 50%;
+    /* Border radius */
+    -webkit-animation: pulse-border 1500ms ease-out infinite;
+    /* Animation */
+    animation: pulse-border 1500ms ease-out infinite;
+    /* Animation */
+  }
+  
+  /* Focus styles for Gmail icon */
+  .gmail:focus {
+    border: none;
+    /* No border */
+    outline: none;
+    /* No outline */
+  }
+  
+  /* Styles for Phone icon */
+  .phn {
+    position: fixed;
+    /* Fixed positioning */
+    transform: all .5s ease;
+    /* Transformation */
+    background-color: blue;
+    /* Background color */
+    display: block;
+    /* Display type */
+    text-align: center;
+    /* Text alignment */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0, 0.15);
+    /* Box shadow */
+    border-radius: 50px;
+    /* Border radius */
+    border-right: none;
+    /* Right border */
+    color: white;
+    /* Text color */
+    font-weight: 700;
+    /* Font weight */
+    font-size: 30px;
+    /* Font size */
+    bottom: 30%;
+    /* Bottom position */
+    left: 1.5%;
+    /* Left position */
+    border: 0;
+    /* Border */
+    z-index: 9999;
+    /* Z-index */
+    width: 50px;
+    /* Width */
+    height: 50px;
+    /* Height */
+    /* line-height: 50px; */
+    /* Line height */
+  }
+  
+  /* Styles for Phone icon's pseudo-element */
+   .phn::before {
+    content: "";
+    /* Empty content */
+    position: absolute;
+    /* Absolute positioning */
+    z-index: -1;
+    /* Z-index */
+    left: 50%;
+    /* Left position */
+    top: 50%;
+    /* Top position */
+    transform: translateX(-50%) translateY(-50%);
+    /* Transformation */
+    display: block;
+    /* Display type */
+    width: 60px;
+    /* Width */
+    height: 60px;
+    /* Height */
+    background-color: blue;
+    /* Background color */
+    border-radius: 50%;
+    /* Border radius */
+    -webkit-animation: pulse-border 1500ms ease-out infinite;
+    /* Animation */
+    animation: pulse-border 1500ms ease-out infinite;
+    /* Animation */
+  }
+  
+  /* Focus styles for Phone icon */
+   .phn:focus {
+    border: none;
+    /* No border */
+    outline: none;
+    /* No outline */
+  }
+  
+  /* Keyframe animation for pulse-border */
+  @keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        /* Transformation */
+        opacity: 1;
+        /* Opacity */
+    }
+  
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1).5;
+        /* Transformation */
+        opacity: 0;
+        /* Opacity */
+    }
+  }
+  
+ 

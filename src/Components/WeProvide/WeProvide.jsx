@@ -6,7 +6,7 @@ import serviceImg from '../../../public/imgs/customer-service.webp'
 // Reusable Card component
 function Card({ imageSrc, title, text }) {
   return (
-    <div className="card">
+    <div className="card" data-aos="fade-up">
       <img className="card-img-top m-3 mx-auto" loading="lazy" src={imageSrc} alt="Card image cap" />
       <div className="card-body">
         <h5 className="card-title text-center">{title}</h5>
@@ -20,24 +20,26 @@ function Card({ imageSrc, title, text }) {
 function CardGroup() {
   return (
     <>
-    <h1 className='bolder mt-4'  data-aos="fade-up"><b>We Can Provide</b></h1>
-    <div className="line"  data-aos="fade-up"></div>
-    <div className="card-group w-75 mx-auto" data-aos="zoom-in">
+    <div> 
+    <h1 className='bolder mt-4' data-aos="fade-up"><b>We Can Provide</b></h1>
+    <div className="line" data-aos="fade-up"></div>
+    <div className="card-group w-75 mx-auto" data-aos="fade-up">
       <Card
         imageSrc={hackImg}
         title="Expert IT and Security Solutions"
         text="Access to an experienced and well-resourced specialist I.T. and Security Solution and service team"
       />
-      <Card
+      <Card 
         imageSrc={serviceImg}
         title="Rapid Response IT Support"
         text="Our expert team offers immediate assistance via phone and remote services, ensuring your technical issues are resolved swiftly and efficiently."
       />
-      <Card
+      <Card  
         imageSrc={feedBackImg}
         title="Reliable Performance History"
         text="Trust in Our Proven and Established Track Record of Success. With years of demonstrated expertise, we consistently deliver results that exceed expectations, ensuring your satisfaction and peace of mind."
       />
+    </div>
     </div>
     </>
   );

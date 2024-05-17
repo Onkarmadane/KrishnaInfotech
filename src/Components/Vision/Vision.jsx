@@ -9,12 +9,12 @@ const Vision = () => {
   }
   return (
 
-    <div data-aos="fade-up">
-      <h1 className='bolder mt-4'><b>Our Vision</b></h1>
-    <div className="line"></div>
-      <div className={`${styles.card} card mt-5 w-75 mx-auto`}>
+    <div>
+      <h1 className='bolder mt-4' data-aos="fade-up"><b>Our Vision</b></h1>
+    <div className="line" data-aos="fade-up"></div>
+      <div data-aos="fade-up" className={`${styles.card} card mt-5 w-75 mx-auto`} >
         <img src={cardData.path.visionImg} className="card-img-top" alt="VisionImg" />
-        <div className="card-body">
+        <div className="card-body" >
           <h5 className="card-title text-center">{cardData.title}</h5>
           <p className="card-text text-justify">{cardData.text}</p>
         </div>
