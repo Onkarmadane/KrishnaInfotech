@@ -6,7 +6,8 @@ import ITImg from '../../../public/imgs/computer.webp';
 import networkingImg from '../../../public/imgs/networking.webp';
 import mobBoosterImg from '../../../public/imgs/Mobile Network Booster.webp';
 import onSiteServiceImg from '../../../public/imgs/on site service.webp';
-import { Link } from "react-router-dom";
+import './Services.css'
+// import { Link } from "react-router-dom";
 
 
 function Card({ imageSrc, title, link }) {
@@ -15,7 +16,7 @@ function Card({ imageSrc, title, link }) {
       <img className="card-img-top m-3 mx-auto" loading="lazy" src={imageSrc} alt="Card image cap" />
       <div className="card-body">
         <h5 className="card-title text-center"><b>{title}</b></h5>
-        <button type="button" class="btn btn-primary"><a target="_blank" href={link}>More</a></button>
+        <button type="button" className="btn btn-primary more hvr-ripple-in"><a  href={link}>Click For More</a></button>
       </div>
     </div>
   );

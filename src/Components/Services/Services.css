@@ -1,0 +1,19 @@
+.more {
+    background-color: #FF5E25 !important;
+    outline: none;
+    border: none;
+    width: 75% !important;
+    margin: auto !important;
+  transform: translateX(17%);
+  border-radius: 50px;
+}
+.more a{
+    color: white;
+    text-decoration: none !important;
+    text-decoration-line: none;
+    margin: auto !important;
+}
+.more:hover{
+    background-color: #fc8053 !important;
+    transition: 0.10s !important;
+}

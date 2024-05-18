@@ -28,7 +28,7 @@ const BackToTopButton = () => {
     <a
       href="#"
       id="toTopBtn"
-      className="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out hvr-wobble-vertical"
+      className="hvr-bob cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out "
       data-abc="true"
       onClick={scrollToTop}
     ></a>

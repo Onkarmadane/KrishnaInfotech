@@ -8,6 +8,7 @@ import BackToTop from '../Components/BackToTop/BackToTop'
 const Servicespage = () => {
   useEffect(()=>{
     document.title = 'Krishna Infotech | Services'
+ 
   })
   return (
     <>

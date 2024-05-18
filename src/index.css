@@ -491,3 +491,12 @@ html {
         font-size: 5px !important;
     }
   }
+
+  /* cctv services page */
+  .col-md-8 p{
+    /* margin:0 !important; */
+    padding: 0 !important;
+  }
+  .col-md-8 , .col-md-8 p{
+    font-size: 17px;
+  }
