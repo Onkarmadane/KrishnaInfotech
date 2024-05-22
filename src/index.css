@@ -233,6 +233,7 @@ html {
   }
   
   /* Styles for card images */
+  
   .card .card-img-top {
     width: 200px;
     /* Image width */
@@ -499,4 +500,75 @@ html {
   }
   .col-md-8 , .col-md-8 p{
     font-size: 17px;
+  }
+  /* paginations */
+
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .pagination {
+      flex-wrap: wrap;
+    }
+  
+    .pagination .page-item {
+      flex: 1 1 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .pagination {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pagination .page-item {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+  
+  .pagination .page-item.active .page-link {
+    background-color: #FF5E25;
+    border-color: #FF5E25;
+    color: white;
+  }
+  
+  .pagination .page-link {
+    color: #FF5E25;
+  }
+  
+  .pagination .page-link:hover {
+    background-color: #FF5E25;
+    border-color: #FF5E25;
+    color: white;
+  }
+  
+  .content-list {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000;
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  /* Fade-in animation */
+  .fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1.15s ease forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .gold{
+    margin: auto !important;
+    width: 23% !important;
+    margin-bottom: 20px !important;
+    /* margin-top: 10px !important; */
   }

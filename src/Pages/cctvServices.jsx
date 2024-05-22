@@ -29,7 +29,7 @@ const CctvNvr = {
     spec:['4 Channel NVR: Ideal for small spaces, providing comprehensive coverage with high-resolution recording.','8 Channel NVR: Perfect for medium-sized areas, offering flexible installation options.','16 Channel NVR: Designed for larger properties, ensuring no corner is left unmonitored.','32 Channel NVR: For extensive surveillance needs, delivering robust and scalable security solutions.'],
     resolutionTitle :'Available Resolution Options',
     resolutionSpec:['2 Mega Pixel: Clear and detailed images, perfect for general surveillance needs.','5 Mega Pixel: Enhanced clarity and detail for more precise monitoring.','8 Mega Pixel: Ultra-high definition, providing superior image quality for critical areas.','12 Mega Pixel: The ultimate in resolution, capturing the finest details even in expansive spaces.'],
-    keySpecTitle:'Key Features',
+    keySpecTitle:'Key Features : ',
     keySpec:['High-Definition Recording: Crystal-clear footage in all lighting conditions.','Remote Viewing: Access live and recorded video from anywhere using your smartphone or computer.','Motion Detection: Intelligent alerts and notifications for any suspicious activity.','Easy Installation: User-friendly setup with step-by-step guidance.','Reliable Performance: Built to last, ensuring continuous operation with minimal maintenance.']
 }
 
@@ -41,7 +41,7 @@ function CCTVServices() {
         <>
             <Navbar />
             <MobileNavbar />
-            <div className="container mt-5">
+            <div className="container mt-5" data-aos='fade-up'>
                 <div className="row align-items-center mb-4 m-2">
                     <div className="col-md-4">
                         <img src={dvrImg} alt="Image" className="img-fluid" style={{ width: '500px' }} />
@@ -54,12 +54,12 @@ function CCTVServices() {
                             <li>{item}</li>
                         ))}
                         <p className="d-inline-flex gap-1">
-                            <a className="link-underline-dark text-black" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <a className="link-underline-dark text-black" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
                                 More..
                             </a>
 
                         </p>
-                        <div className="collapse" id="collapseExample">
+                        <div className="collapse" id="collapseExample1">
                             <div className="card card-body" style={{
                                 outline: 'none', border: 'none', margin: '0', padding: '0', transform: 'none', boxShadow: 'none', filter: 'none'
                             }}>
@@ -78,7 +78,7 @@ function CCTVServices() {
 
                 <hr className='w-75 mx-auto' data-scroll data-scroll-speed="4" data-scroll-direction="horizontal" />
 
-                <div className="row align-items-center">
+                <div className="row align-items-center" data-aos='fade-up'>
                     <div className="col-md-4 order-md-2">
                         <img src={nvrImg} alt="Image" className="img-fluid" style={{ width: '500px', padding: '12%' }} />
                     </div>

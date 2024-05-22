@@ -1,7 +1,7 @@
 footer {
     background-color: #FF5E25;
     /* Background color */
-    color: white;
+    color: white !important;
     /* Text color */
   }
 
