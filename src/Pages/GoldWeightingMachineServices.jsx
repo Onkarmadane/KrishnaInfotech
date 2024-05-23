@@ -5,6 +5,9 @@ import Footer from '../Components/Footer/Footer';
 import BackToTopButton from '../Components/BackToTop/BackToTop';
 import Services from '../Components/Services/Services';
 import goldWeighingImg from '../../public/imgs/goldWeightingMachine.webp'
+import ContactOverlay from '../Components/ContactOverlay/ContactOverlay';
+import CallNow from '../Components/CallNow/CallNow'
+import { useEffect } from 'react';
 
 const GoldWeighting = {
     title: 'High Precision Gold Weighing Machine',
@@ -16,6 +19,9 @@ const GoldWeighting = {
     spec: ['Capacity: 0.01 grams to 3000 grams (3 kilograms)', 'Display: LCD with backlight']
 }
 const GoldWeightingMachineServices = () => {
+    useEffect(() => {
+        document.title = 'Krishna Infotech | Gold Weighing Machines'
+      })
     return (
         <>
             <Navbar />
@@ -24,6 +30,7 @@ const GoldWeightingMachineServices = () => {
                 <div className="row align-items-center mb-4 m-2">
                     <div className="col-md-4">
                         <img src={goldWeighingImg} alt="Image" className="img-fluid" style={{ width: '500px' }} />
+                        <CallNow/>
                     </div>
                     <div className="col-md-8">
                         <h1 className='text-start mx-1'><b>{GoldWeighting.title}</b></h1>
@@ -56,8 +63,9 @@ const GoldWeightingMachineServices = () => {
                 </div>
             <Marquee />
             <Services />
-            <Footer />
             <BackToTopButton />
+            <ContactOverlay/>
+            <Footer />
         </>
     )
 }

@@ -7,7 +7,7 @@ import CCTVServices from './Pages/cctvServices';
 import BiometricsServices from './Pages/BiometricsServices';
 import ItManagment from './Pages/itManagmentServices';
 import GoldWeightingMachineServices from './Pages/GoldWeightingMachineServices';
-
+import NetworkingServices from './Pages/NetworkingServices';
 const App = () => {
   return (
     <>
@@ -20,6 +20,7 @@ const App = () => {
         <Route path="/biometrics-services" element={<BiometricsServices />} />
         <Route path="/itmanagment-services" element={<ItManagment/>}/>
         <Route path="/goldmachine-services" element={<GoldWeightingMachineServices/>}/>
+        <Route path="/networking-services" element={<NetworkingServices/>}/>
       </Routes>
       </BrowserRouter>
     </>

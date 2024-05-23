@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+
 import { MobileNavbar, Navbar } from '../Components/Nav/Nav';
 import Marquee from '../Components/Marquee/Marquee';
 import Footer from '../Components/Footer/Footer';
@@ -6,6 +7,8 @@ import BackToTopButton from '../Components/BackToTop/BackToTop';
 import Services from '../Components/Services/Services';
 import dvrImg from '../../public/imgs/dvr.webp'
 import nvrImg from '../../public/imgs/nvr.webp'
+import ContactOverlay from '../Components/ContactOverlay/ContactOverlay';
+import CallNow from '../Components/CallNow/CallNow'
 import '../../src/index.css'
 
 const CctvDvr = {
@@ -24,13 +27,13 @@ const CctvDvr = {
 
 const CctvNvr = {
     title: 'NVR Systems',
-    text : "Elevate your security with our state-of-the-art NVR systems, offering various channel configurations to meet your surveillance needs. Whether you're securing a small business or a large facility, our NVR solutions provide unmatched reliability and clarity.",
-    spectitle:'Available Channel Configurations :',
-    spec:['4 Channel NVR: Ideal for small spaces, providing comprehensive coverage with high-resolution recording.','8 Channel NVR: Perfect for medium-sized areas, offering flexible installation options.','16 Channel NVR: Designed for larger properties, ensuring no corner is left unmonitored.','32 Channel NVR: For extensive surveillance needs, delivering robust and scalable security solutions.'],
-    resolutionTitle :'Available Resolution Options',
-    resolutionSpec:['2 Mega Pixel: Clear and detailed images, perfect for general surveillance needs.','5 Mega Pixel: Enhanced clarity and detail for more precise monitoring.','8 Mega Pixel: Ultra-high definition, providing superior image quality for critical areas.','12 Mega Pixel: The ultimate in resolution, capturing the finest details even in expansive spaces.'],
-    keySpecTitle:'Key Features : ',
-    keySpec:['High-Definition Recording: Crystal-clear footage in all lighting conditions.','Remote Viewing: Access live and recorded video from anywhere using your smartphone or computer.','Motion Detection: Intelligent alerts and notifications for any suspicious activity.','Easy Installation: User-friendly setup with step-by-step guidance.','Reliable Performance: Built to last, ensuring continuous operation with minimal maintenance.']
+    text: "Elevate your security with our state-of-the-art NVR systems, offering various channel configurations to meet your surveillance needs. Whether you're securing a small business or a large facility, our NVR solutions provide unmatched reliability and clarity.",
+    spectitle: 'Available Channel Configurations :',
+    spec: ['4 Channel NVR: Ideal for small spaces, providing comprehensive coverage with high-resolution recording.', '8 Channel NVR: Perfect for medium-sized areas, offering flexible installation options.', '16 Channel NVR: Designed for larger properties, ensuring no corner is left unmonitored.', '32 Channel NVR: For extensive surveillance needs, delivering robust and scalable security solutions.'],
+    resolutionTitle: 'Available Resolution Options',
+    resolutionSpec: ['2 Mega Pixel: Clear and detailed images, perfect for general surveillance needs.', '5 Mega Pixel: Enhanced clarity and detail for more precise monitoring.', '8 Mega Pixel: Ultra-high definition, providing superior image quality for critical areas.', '12 Mega Pixel: The ultimate in resolution, capturing the finest details even in expansive spaces.'],
+    keySpecTitle: 'Key Features : ',
+    keySpec: ['High-Definition Recording: Crystal-clear footage in all lighting conditions.', 'Remote Viewing: Access live and recorded video from anywhere using your smartphone or computer.', 'Motion Detection: Intelligent alerts and notifications for any suspicious activity.', 'Easy Installation: User-friendly setup with step-by-step guidance.', 'Reliable Performance: Built to last, ensuring continuous operation with minimal maintenance.']
 }
 
 function CCTVServices() {
@@ -45,6 +48,7 @@ function CCTVServices() {
                 <div className="row align-items-center mb-4 m-2">
                     <div className="col-md-4">
                         <img src={dvrImg} alt="Image" className="img-fluid" style={{ width: '500px' }} />
+                        <CallNow />
                     </div>
                     <div className="col-md-8">
                         <h1 className='text-start mx-1'><b>{CctvDvr.title}</b></h1>
@@ -81,6 +85,7 @@ function CCTVServices() {
                 <div className="row align-items-center" data-aos='fade-up'>
                     <div className="col-md-4 order-md-2">
                         <img src={nvrImg} alt="Image" className="img-fluid" style={{ width: '500px', padding: '12%' }} />
+                        <CallNow />
                     </div>
                     <div className="col-md-8">
                         <h1 className='text-start mx-1'><b>{CctvNvr.title}</b></h1>
@@ -114,8 +119,9 @@ function CCTVServices() {
             </div>
             <Marquee />
             <Services />
-            <Footer />
             <BackToTopButton />
+            <ContactOverlay />
+            <Footer />
 
         </>
     );

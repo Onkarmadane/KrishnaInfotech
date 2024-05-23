@@ -49,25 +49,18 @@ function Services() {
         <Card
           imageSrc={networkingImg}
           title="Networking"
+          link='/networking-services'
         />
         <Card
-          imageSrc={mobBoosterImg}
-          title="Mobile Network Boosters"
+          imageSrc={goldMachineImg}
+          title="Gold Weighting Machine"
+          link='/goldmachine-services'
 
         />
-        <Card
+        {/* <Card
           imageSrc={onSiteServiceImg}
           title="On Site Services"
-        />
-      </div>
-      <div className="card gold mb-5" style={{
-        width: '75%'
-      }}>
-        <img className="card-img-top mt-4" loading="lazy" src={goldMachineImg} alt="Card image cap" />
-        <div className="card-body">
-          <h5 className="card-title text-center"><b>Gold Weighting Machine</b></h5>
-          <button type="button" className="btn btn-primary more hvr-ripple-in"><a href='/goldmachine-services'>Click For More</a></button>
-        </div>
+        /> */}
       </div>
     </>
   )

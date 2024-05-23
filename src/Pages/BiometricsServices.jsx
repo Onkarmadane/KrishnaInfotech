@@ -5,6 +5,8 @@ import Footer from '../Components/Footer/Footer';
 import BackToTopButton from '../Components/BackToTop/BackToTop';
 import Services from '../Components/Services/Services';
 import epabxImg from '../../public/imgs/epabx.webp';
+import ContactOverlay from '../Components/ContactOverlay/ContactOverlay';
+import CallNow from '../Components/CallNow/CallNow'
 import '../../src/index.css'
 
 const Biometrics = {
@@ -37,6 +39,7 @@ function BiometricsServices() {
         <div className="row align-items-center mb-4 m-2">
           <div className="col-md-4">
             <img src={epabxImg} alt="Image" className="img-fluid" style={{ width: '500px' }} />
+            <CallNow/>
           </div>
           <div className="col-md-8">
             <h1 className='text-start mx-1'><b>{Biometrics.title}</b></h1>
@@ -78,8 +81,9 @@ function BiometricsServices() {
       </div>
       <Marquee />
       <Services />
-      <Footer />
       <BackToTopButton />
+      <ContactOverlay/>
+      <Footer />
 
     </>
   );

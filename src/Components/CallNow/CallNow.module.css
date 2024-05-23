@@ -1,0 +1,48 @@
+.button {
+  background-color: #FF5E25;
+  color: white;
+  animation: fadeBlinkAnimation 2s infinite;
+  -webkit-animation: fadeBlinkAnimation 2s infinite;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+@keyframes fadeBlinkAnimation {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeBlinkAnimation {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.button:hover {
+  animation-play-state: paused; /* Pause the animation on hover */
+  -webkit-animation-play-state: paused; /* For Safari */
+}
+
+/* New style for when animation is paused */
+.button:hover {
+  animation: none;
+  -webkit-animation: none;
+  background-color: #FF5E25; /* Maintain the same background color */
+}
+
+
+  .Link{
+text-decoration: none !important;
+color: white;
+  }
+  
