@@ -572,3 +572,53 @@ html {
     margin-bottom: 20px !important;
     /* margin-top: 10px !important; */
   }
+  .image-gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between images if needed */
+  }
+  
+  .gallery-image {
+    width: 15%; /* Base width for larger screens */
+    /* object-fit: cover; */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .gallery-image {
+      width: 20%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .gallery-image {
+      width: 25%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-image {
+      width: 30%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .gallery-image {
+      width: 40%;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .gallery-image {
+      width: 50%;
+    }
+  }
+  

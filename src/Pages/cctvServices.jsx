@@ -39,6 +39,7 @@ const CctvNvr = {
 function CCTVServices() {
     useEffect(() => {
         document.title = 'Krishna Infotech | CCTV Services'
+        AOS.refresh();
     })
     return (
         <>
@@ -118,7 +119,7 @@ function CCTVServices() {
                 </div>
             </div>
             <Marquee />
-            <Services />
+            {/* <Services /> */}
             <BackToTopButton />
             <ContactOverlay />
             <Footer />

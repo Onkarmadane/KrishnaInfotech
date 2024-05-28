@@ -7,6 +7,7 @@ import BackToTop from '../Components/BackToTop/BackToTop'
 const AboutPage = () => {
     useEffect(()=>{
         document.title = 'Krishna Infotech | About us'
+        AOS.refresh();
     })
   return (
     <>

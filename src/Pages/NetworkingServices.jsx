@@ -29,6 +29,7 @@ const data = {
 
     useEffect(() => {
       document.title = 'Krishna Infotech | Networking Services'
+      AOS.refresh();
     })
     const [activeKey, setActiveKey] = useState(null); // Initially no item is active
   
@@ -86,7 +87,7 @@ const data = {
           </div>
         </div>
         <Marquee />
-        <Services />
+        {/* <Services /> */}
         <BackToTopButton />
         <ContactOverlay />
         <Footer />

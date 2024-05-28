@@ -11,6 +11,7 @@ import BackToTopButton from '../Components/BackToTop/BackToTop';
 const Home = () => {
 useEffect(()=>{
     document.title ='Krishna Infotech | Home'
+    AOS.refresh();
 })
     return (
         <>

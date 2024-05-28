@@ -18,8 +18,8 @@ const App = () => {
         <Route path='/AboutPage' element={<AboutPage/>} />
         <Route path="/cctv-services" element={<CCTVServices /> } />
         <Route path="/biometrics-services" element={<BiometricsServices />} />
-        <Route path="/itmanagment-services" element={<ItManagment/>}/>
-        <Route path="/goldmachine-services" element={<GoldWeightingMachineServices/>}/>
+        <Route path="/itmanagment-services"  element={<ItManagment/>}/>
+        <Route path="/goldmachine-services"  element={<GoldWeightingMachineServices/>}/>
         <Route path="/networking-services" element={<NetworkingServices/>}/>
       </Routes>
       </BrowserRouter>

@@ -37,7 +37,8 @@ const data = {
 const itManagmentServices = () => {
 
   useEffect(() => {
-    document.title = 'Krishna Infotech | IT Services'
+    document.title = 'Krishna Infotech | IT Services';
+    AOS.refresh();
   })
   const [activeKey, setActiveKey] = useState(null); // Initially no item is active
 
@@ -94,7 +95,7 @@ const itManagmentServices = () => {
         </div>
       </div>
       <Marquee />
-      <Services />
+      {/* <Services /> */}
       <BackToTopButton />
       <ContactOverlay />
       <Footer />

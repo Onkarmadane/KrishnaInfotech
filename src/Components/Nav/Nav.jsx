@@ -14,21 +14,18 @@ const Navbar = () => {
 
             <ul className="navbar-nav mr-auto ">
               <li className="nav-item">
-                <NavLink className="nav-link " to="/">Home</NavLink>
+              <NavLink to="/" className='nav-link'>Home</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/servicespage">Services</NavLink>
+              <NavLink to="/servicespage" className='nav-link'>Services</NavLink>
               </li>
             </ul>
             <NavLink className="navbar-brand logo_area" to="/">
               <img src={logoImg} id="KI" alt="logo" />
             </NavLink>
             <ul className="navbar-nav ml-auto">
-              {/* <li className="nav-item">
-              <NavLink className="nav-link" to="/products">Products</NavLink>
-            </li> */}
               <li className="nav-item">
-                <NavLink className="nav-link" to="/aboutpage">About Us</NavLink>
+              <NavLink to="/AboutPage" className='nav-link'>About</NavLink>
               </li>
             </ul>
           </div>

@@ -30,6 +30,7 @@ const Biometrics = {
 function BiometricsServices() {
   useEffect(() => {
     document.title = 'Krishna Infotech | Biometrics Services'
+    AOS.refresh();
   })
   return (
     <>
@@ -80,7 +81,7 @@ function BiometricsServices() {
         </div>
       </div>
       <Marquee />
-      <Services />
+      {/* <Services /> */}
       <BackToTopButton />
       <ContactOverlay/>
       <Footer />

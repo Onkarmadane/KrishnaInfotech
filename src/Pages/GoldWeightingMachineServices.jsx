@@ -6,7 +6,13 @@ import BackToTopButton from '../Components/BackToTop/BackToTop';
 import Services from '../Components/Services/Services';
 import goldWeighingImg from '../../public/imgs/goldWeightingMachine.webp'
 import ContactOverlay from '../Components/ContactOverlay/ContactOverlay';
+import ProductGallery from '../Components/ProductGallery/ProductGallery';
 import CallNow from '../Components/CallNow/CallNow'
+// import Img1 from '../../public/imgs/Picture1.webp'
+// import Img2 from '../../public/imgs/Picture2.webp'
+// import Img3 from '../../public/imgs/Picture3.webp'
+// import Img4 from '../../public/imgs/Picture4.webp'
+// import Img5 from '../../public/imgs/Picture5.webp'
 import { useEffect } from 'react';
 
 const GoldWeighting = {
@@ -18,10 +24,12 @@ const GoldWeighting = {
     SpecTitle: 'Specifications :',
     spec: ['Capacity: 0.01 grams to 3000 grams (3 kilograms)', 'Display: LCD with backlight']
 }
+
 const GoldWeightingMachineServices = () => {
     useEffect(() => {
         document.title = 'Krishna Infotech | Gold Weighing Machines'
-      })
+        AOS.refresh();
+    })
     return (
         <>
             <Navbar />
@@ -30,7 +38,7 @@ const GoldWeightingMachineServices = () => {
                 <div className="row align-items-center mb-4 m-2">
                     <div className="col-md-4">
                         <img src={goldWeighingImg} alt="Image" className="img-fluid" style={{ width: '500px' }} />
-                        <CallNow/>
+                        <CallNow />
                     </div>
                     <div className="col-md-8">
                         <h1 className='text-start mx-1'><b>{GoldWeighting.title}</b></h1>
@@ -60,14 +68,15 @@ const GoldWeightingMachineServices = () => {
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
+            <ProductGallery/>
             <Marquee />
-            <Services />
+            {/* <Services /> */}
             <BackToTopButton />
-            <ContactOverlay/>
+            <ContactOverlay />
             <Footer />
         </>
     )
 }
 
-export default GoldWeightingMachineServices
+export default GoldWeightingMachineServices;
